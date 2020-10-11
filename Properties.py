@@ -1,29 +1,16 @@
-#!/usr/bin/env python
-#
-# Created by carlosjimz on 22/11/2018 18:02
-#
-##############################################################
-
-class P:
-
-    def __init__(self, x):
-        self.x = x
+class Status:
+    ipoints = 0
 
     @property
-    def x(self):
-        return self.__x
+    def points(self):
+        return int(self.ipoints or 0)
 
-    @x.setter
-    def x(self, x):
-        if x < 0:
-            self.__x = 0
-        elif x > 1000:
-            self.__x = 1000
-        else:
-            self.__x = x
+    @points.setter
+    def points(self, new_points):
+        self.ipoints = new_points
 
 
-p1 = P(1001)
-print(p1.x)
-p1.x = -12
-print(p1.x)
+status = Status()
+print(status.points)
+status.points = 10
+print(status.points)
