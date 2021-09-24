@@ -34,19 +34,23 @@ class Publisher:
             callback(message)
 
 
-pub = Publisher(['lunch', 'dinner'])
+def main():
+    pub = Publisher(['lunch', 'dinner'])
 
-bob = Subscriber('Bob')
-john = Subscriber('Alice')
-alice = Subscriber('John')
+    bob = Subscriber('Bob')
+    john = Subscriber('Alice')
+    alice = Subscriber('John')
 
-pub.register('lunch', bob)
-pub.register('dinner', alice)
-pub.register('lunch', john)
-pub.register('dinner', john)
+    pub.register('lunch', bob)
+    pub.register('dinner', alice)
+    pub.register('lunch', john)
+    pub.register('dinner', john)
 
-pub.dispatch('lunch', "LUNCH IS SERVED!!!")
-pub.unregister('lunch', john)
-print("************************")
-pub.dispatch('dinner', "DINNER IS READY!!!")
+    pub.dispatch('lunch', "LUNCH IS SERVED!!!")
+    pub.unregister('lunch', john)
+    print("************************")
+    pub.dispatch('dinner', "DINNER IS READY!!!")
 
+
+if __name__ == '__main__':
+    main()

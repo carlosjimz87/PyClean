@@ -1,8 +1,8 @@
 nums = [1, 2, 3, 4]
 
 
-def squares(nums):
-    for n in nums:
+def squares(_nums):
+    for n in _nums:
         yield n*n
 
 

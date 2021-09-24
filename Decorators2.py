@@ -7,35 +7,36 @@ def decorator_function(original_function):
             for command in commands.split(" "):
                 print(command)
         except Exception as e:
-            print('ERROR: {} in [{}]'.format(e, function_name))
+            print(f'ERROR: {e} in [{function_name}]')
         else:
-            print("DONE")
+            print("DONE\n")
     return inner
 
 
 @decorator_function
-def myfunctionwDecorator():
+def my_function_with_decorator():
     """ ORIGINAL FUNCTION WITH DECORATORS """
     commands = "add stash commit push pull checkout"
 
     return commands
 
 
-def myfunction():
+def my_function():
     """ ORIGINAL FUNCTION """
     commands = "add stash commit push pull checkout"
 
     try:
-        raise Exception("My Exception")
         for command in commands.split(" "):
             print(command)
+        raise Exception("My Exception")
     except Exception as e:
-        print('ERROR: {} in [myfunction]'.format(e))
-    else:
-        print("DONE")
+        print(f'ERROR: {e} in [function_name]')
+
+    print("DONE\n")
 
     return commands
 
 
-# myfunction()
-myfunctionwDecorator()
+if __name__ == '__main__':
+    # my_function()
+    my_function_with_decorator()

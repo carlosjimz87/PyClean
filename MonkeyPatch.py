@@ -6,7 +6,8 @@ def speak(self):
     print("hoooo")
 
 
-MyClass.speak = speak
+if __name__ == '__main__':
+    MyClass.speak = speak
 
-mc = MyClass()
-mc.speak()
+    mc = MyClass()
+    mc.speak()

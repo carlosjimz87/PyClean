@@ -6,5 +6,6 @@ class Manager:
         print("do something after")
 
 
-with Manager():
-    print("do some work")  # this is the main work
+if __name__ == '__main__':
+    with Manager():
+        print("do some work")  # this is the main work

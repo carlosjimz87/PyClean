@@ -11,7 +11,6 @@ import sqlite3
 DB_FILENAME = "users.db"
 TABLE_NAME = "users"
 
-
 # class DBManagerWithDecorators:
 #
 #     def db_handler(db_function):
@@ -59,27 +58,31 @@ def db_handler(query):
         try:
             for command in commands:
                 cursor.execute(command)
-                print("Executing"+query)
+                print("Executing" + query)
         except Exception as e:
             logging.error("Error in %s: %s", query_name, e)
             return -1
         else:
             logging.info("%s run successfully", query_name)
             return 0
+
     return inner
 
+
 @db_handler
-def hendler_select_allitems_from_table(cursor, tablename):
+def handler_select_allitems_from_table(cursor, tablename):
     return (
         # '''SELECT * FROM {0}'''.format(tablename)
         '''SELECT * FROM  users'''
     )
+
 
 @db_handler
 def handler_create_table(cursor):
     return (
         sentence
     )
+
 
 @db_handler
 def handler_create_table2(cursor):
@@ -91,7 +94,7 @@ def handler_create_table2(cursor):
 
 def select_allitems_from_table(cursor, tablename):
     sentence = """SELECT * FROM {0}""".format(tablename)
-    return hendler_select_allitems_from_table(cursor=cursor)
+    return handler_select_allitems_from_table(cursor=cursor)
 
 
 def create_table(cursor, tablename, columns):
@@ -103,9 +106,11 @@ def create_table(cursor, tablename, columns):
 def create_db(filename):
     return sqlite3.connect(filename)
 
+
 columns = {'name': 'text', 'surname': 'text', 'age': 'real', 'email': 'text', 'phone': 'real'}
 
-os.remove(DB_FILENAME)
-cursor = create_db(DB_FILENAME)
-create_table(cursor=cursor, tablename=TABLE_NAME, columns=columns)
-select_allitems_from_table(cursor=cursor, tablename=TABLE_NAME)
+if __name__ == '__main__':
+    os.remove(DB_FILENAME)
+    cursor = create_db(DB_FILENAME)
+    create_table(cursor=cursor, tablename=TABLE_NAME, columns=columns)
+    select_allitems_from_table(cursor=cursor, tablename=TABLE_NAME)

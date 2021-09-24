@@ -1,6 +1,4 @@
-
 g = 0
-
 
 class Person:
 
@@ -21,8 +19,9 @@ class Employee(Person):
         return "[" + str(self.staffnum) + "] " + self.firstname + " " + self.lastname
 
 
-x = Employee("Marge", "Simpson")
-y = Employee("Homer", "Simpson")
+if __name__ == '__main__':
+    x = Employee("Marge", "Simpson")
+    y = Employee("Homer", "Simpson")
 
-print(x)
-print(y)
+    print(x)
+    print(y)

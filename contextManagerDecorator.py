@@ -7,7 +7,7 @@ class manager(contextlib.ContextDecorator):
         print("do something before")
         return self
 
-    def __exit__(self, *exec):  # it will run even if an exception occurs whilst the main work
+    def __exit__(self, *executor):  # it will run even if an exception occurs whilst the main work
         print("do something after")
 
 
@@ -16,4 +16,5 @@ def main_work():
     print("do some work")  # this is the main work
 
 
-main_work()
+if __name__ == '__main__':
+    main_work()

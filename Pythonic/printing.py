@@ -9,4 +9,4 @@ data = {'day': 'Saturday', 'office': 'Home', 'other': 'UNUSED'}
 
 print("On {day} I was working at {office}!".format(**data))
 
-print(f"(three years later )Hi, I'm {name} and I'm {age+3} years old.")
+print(f"(three years later )Hi, I'm {name} and I'm {age + 3} years old.")

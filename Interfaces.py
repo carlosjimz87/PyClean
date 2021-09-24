@@ -51,14 +51,15 @@ class Square(Rectangle):
         return 2*super(Square, self).area()
 
 
-s = Shape()
-r = Rectangle(5, 6)
-print(type(r))
-print(r.area())
-print(r.perimeter())
+if __name__ == '__main__':
+    s = Shape()
+    r = Rectangle(5, 6)
+    print(type(r))
+    print(r.area())
+    print(r.perimeter())
 
-sq = Square(5)
-print(type(sq))
-print(sq.area())
-print(sq.perimeter())
+    sq = Square(5)
+    print(type(sq))
+    print(sq.area())
+    print(sq.perimeter())
 

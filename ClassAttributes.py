@@ -1,11 +1,12 @@
-class Person():
+class Person:
     pass
 
 
-person = Person()
+if __name__ == '__main__':
+    person = Person()
 
-setattr(person, 'first', 'John')
-setattr(person, 'last', 'Doe')
+    setattr(person, 'first', 'John')
+    setattr(person, 'last', 'Doe')
 
-print(person.first)
-print(person.last)
+    print(person.first)
+    print(person.last)

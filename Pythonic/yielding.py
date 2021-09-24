@@ -1,7 +1,7 @@
 import time
 
 
-def classic_fibo(limit):
+def classic_fib(limit):
     nums = []
     current, nxt = 0, 1
 
@@ -12,7 +12,7 @@ def classic_fibo(limit):
     return nums
 
 
-def yield_fibbo(limit):
+def yield_fib(limit):
     current, nxt = 0, 1
     while current < limit:
         yield current
@@ -21,10 +21,10 @@ def yield_fibbo(limit):
 
 N = 99
 start_time = time.time()
-fib = classic_fibo(N)
+fib = classic_fib(N)
 print(f"Classic: {fib}")
 print("--- %s seconds ---" % (time.time() - start_time))
 start_time = time.time()
-fib = list(yield_fibbo(N))
+fib = list(yield_fib(N))
 print(f"Yielding: {fib}")
 print("--- %s seconds ---" % (time.time() - start_time))
