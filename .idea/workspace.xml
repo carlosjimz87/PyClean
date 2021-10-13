@@ -5,34 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a17e797-3fb2-4569-8f27-25e9fd317544" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PyClean.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PyClean.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Args&amp;Kwargs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Args&amp;Kwargs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bignums.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bignums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassAttributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAttributes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/CustomSort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorators2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decorators2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enumerate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enumerate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FilesContextManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/FilesContextManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GetPass.py" beforeDir="false" afterPath="$PROJECT_DIR$/GetPass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Inheritance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interfaces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MonkeyPatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/MonkeyPatch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Observers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Observers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonic/generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pythonic/generators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonic/merging.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pythonic/merging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonic/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pythonic/out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonic/printing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pythonic/printing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonic/slicing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pythonic/fibbonacci.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonic/slotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pythonic/slotting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pythonic/yielding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pythonic/yielding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contextManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/contextManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contextManagerDecorator.py" beforeDir="false" afterPath="$PROJECT_DIR$/contextManagerDecorator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,9 +237,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.fibbonacci" />
       <item itemvalue="Python.merging" />
       <item itemvalue="Python.printing" />
-      <item itemvalue="Python.fibbonacci" />
       <item itemvalue="Python.slotting" />
       <item itemvalue="Python.yielding" />
     </list>
@@ -357,6 +330,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
